@@ -1,0 +1,21 @@
+
+<!-- Footer -->
+<footer>
+    <div class="row">
+        <div class="col-lg-4">
+            <p>Copyright &copy; {{ site.title }} 2014</p>
+        </div>
+
+        <div class="col-lg-offset-8">
+    			{% if site.twitter_username %}
+    			<a href="https://twitter.com/{{ site.twitter_username }}"><span class="fa fa-twitter fa-2x fa-pull-left"></span></a>
+    			{% endif %}
+          {% if site.github_username %}
+    			<a href="https://github.com/{{ site.github_username }}"><span class="fa fa-github fa-2x fa-pull-left"></span></a>
+    			{% endif %}
+          <a href="{{ "/feed.xml" | relative_url }}"><span class="fa fa-rss fa-2x fa-pull-left"></span></a>
+    		</div><!-- .footer-links -->
+        <!-- /.col-lg-12 -->
+    </div>
+    <!-- /.row -->
+</footer>
