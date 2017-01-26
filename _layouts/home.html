@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+{{ content }}
+
+{% for post in paginator.posts %}
+
+{% assign author = site.data.people[post.author] %}
+
+<h2>
+  <a href="{{ post.url }}">{{ post.title }}</a>
+</h2>
+<p class="lead">
+  by <a href="#">{{ author.name }}</a>
+</p>
+<p><span class="fa fa-clock-o"></span> Posted on {{ post.date | date: '%B %d, %Y' }}</p>
+
+<hr>
+
+<img class="img-fluid" src="http://placehold.it/900x300" alt="">
+
+<hr>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, veritatis, tempora, necessitatibus inventore nisi quam quia repellat ut tempore laborum possimus eum dicta id animi corrupti debitis ipsum officiis rerum.</p>
+<a class="btn btn-primary" href="{{ post.url }}">Read More <span class="fa fa-chevron-right"></span></a>
+
+<hr>
+
+{% endfor %}
+
+{% include pagination.html %}
