@@ -1,0 +1,18 @@
+
+<div class="card mb-3">
+    <div class="card-header">Latest Posts</div>
+    <div class="card-block">
+      {% assign latest_posts = site.posts %}
+      {% for latest_post in latest_posts limit:5 %}
+
+      <div class="row mb-2">
+        <div class="col-12">
+          <a href="{{ latest_post.url }}">{{ latest_post.title }}</a>
+        </div>
+        <div class="col-12  pl-4">
+          <small class="fa fa-clock-o"> {{ latest_post.date | date: '%B %d, %Y' }}</small>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+</div>
