@@ -1,75 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+  <head>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="/assets/favicon.ico">
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="shortcut icon" href="/assets/favicon.ico">
 
-    <meta name="description" content="">
-    <meta name="author" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
 
-    <title>{{ page.title }}</title>
+      <title>{{ page.title }}</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+      <!-- Bootstrap Core CSS -->
+      <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+      <link href="/assets/css/bootstrap-grid.min.css" rel="stylesheet">
+      <link href="/assets/css/bootstrap-reboot.min.css" rel="stylesheet">
 
-    <!-- Font Awesome CSS -->
-    <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+      <!-- Font Awesome CSS -->
+      <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
 
-    <!-- Custom CSS -->
-    <link href="/assets/css/blog-home.css" rel="stylesheet">
+      <!-- Custom CSS -->
+      <link href="/assets/css/blog-home.css" rel="stylesheet">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
 
-</head>
+  </head>
 
-<body>
+  <body>
 
-    {% include navigation.html %}
-
-    <!-- Page Content -->
     <div class="container">
 
-        <div class="row">
+      {% include navigation.html %}
 
-            <!-- Blog Entries Column -->
-            <div class="col-md-8">
+      <hr>
+      
+      <div class="row">
 
-                <h1 class="page-header">
-                    Page Heading
-                    <small>Secondary Text</small>
-                </h1>
+        <!-- Blog Entries Column -->
+        <div class="col-md-8">
 
-                {{ content }}
+          <h1 class="page-header">
+            Page Heading
+            <small>Secondary Text</small>
+          </h1>
 
-            </div>
-
-            {% include sidebar.html %}
+          {{ content }}
 
         </div>
-        <!-- /.row -->
 
-        <hr>
+        {% include sidebar.html %}
 
-        {% include footer.html %}
+      </div>
+
+      <hr>
+
+      {% include footer.html %}
 
     </div>
-    <!-- /.container -->
 
-    <!-- jQuery -->
     <script src="/assets/js/jquery.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
     <script src="/assets/js/bootstrap.min.js"></script>
 
-</body>
+  </body>
 
 </html>
