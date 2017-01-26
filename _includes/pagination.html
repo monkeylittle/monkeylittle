@@ -1,14 +1,13 @@
 
 <!-- Pager -->
-<ul class="pager">
-    {% if paginator.next_page_path %}
-    <li class="previous">
-        <a href="{{ paginator.next_page_path }}">&larr; Older</a>
-    </li>
-    {% endif %}
-    {% if paginator.previous_page_path %}
-    <li class="next">
-        <a href="{{ paginator.previous_page_path }}">Newer &rarr;</a>
-    </li>
-    {% endif %}
-</ul>
+<div class="pagination justify-content-between">
+
+  <div class="page-link{% if paginator.next_page_path == undefined %} invisible{% endif %}">
+      <a href="{{ paginator.next_page_path }}">&larr; Older</a>
+  </div>
+
+  <div class="page-link{% if paginator.previous_page_path == undefined %} invisible{% endif %}">
+      <a href="{{ paginator.previous_page_path }}">Newer &rarr;</a>
+  </div>
+
+</div>
