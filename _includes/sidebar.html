@@ -2,30 +2,22 @@
 <!-- Blog Sidebar Widgets Column -->
 <div class="col-md-4">
 
-    <!-- Blog Search Well -->
-    <div class="card mb-3">
-        <div class="card-header">Blog Search</div>
-        <div class="card-block">
-          <div class="input-group">
-              <input type="text" class="form-control">
-              <span class="input-group-btn">
-                  <button class="btn btn-default" type="button">
-                      <span class="fa fa-search"></span>
-              </button>
-              </span>
-          </div>
-        </div>
-        <!-- /.input-group -->
-    </div>
+  {% include sidebar_about.html %}
 
-    {% include sidebar_latest_posts.html %}
-
-    <!-- Side Widget Well -->
-    <div class="card mb-3">
-        <div class="card-header">Side Widget Well</div>
-        <div class="card-block">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, perspiciatis adipisci accusamus laudantium odit aliquam repellat tempore quos aspernatur vero.</p>
-        </div>
+  <div class="card mb-3">
+    <div class="card-header">Blog Search</div>
+    <div class="card-block">
+      <div class="input-group">
+        <input type="text" class="form-control">
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="button">
+            <span class="fa fa-search"></span>
+          </button>
+        </span>
+      </div>
     </div>
+  </div>
+
+  {% include sidebar_latest_posts.html %}
 
 </div>
