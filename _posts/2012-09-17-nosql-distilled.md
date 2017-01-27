@@ -10,7 +10,7 @@ categories:
 - NoSQL
 ---
 
-<img class="alignright size-full wp-image-2542" src="http://www.monkeylittle.com/wp-content/uploads/2015/04/NoSQL-Distilled.jpg" alt="NoSQL Distilled" width="244" height="320" />
+<img src="/assets/img/post/2012-09-17-nosql-distilled/book-cover.jpg" class="pull-left img-fluid img-thumbnail mr-3"/>
 
 I've been waiting expectantly for this book for a while now so as soon as it was published I was keen to obtain a copy.  NoSQL is a set of persistence technologies that justifiably receive a lot of attention because of the way they force people to change the way they look at data access.  But because NoSQL is a set of (complicated) technologies they are generally not very well understood.  This coupled with Fowler's ability to convey complex concepts in a way that the rest of us mortals can understand has resulted in a compelling read that I will try to summarise in what follows.
 

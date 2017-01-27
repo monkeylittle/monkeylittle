@@ -10,7 +10,7 @@ categories:
 - Enterprise Integration
 ---
 
-<img class="alignright size-full wp-image-2548" src="http://www.monkeylittle.com/wp-content/uploads/2015/04/RabbitMQ-in-Action.jpg" alt="RabbitMQ in Action" width="255" height="320" />
+<img src="/assets/img/post/2012-11-01-rabbitmq-in-action/book-cover.jpg" class="pull-left img-fluid img-thumbnail mr-3"/>
 
 Subsequent to the acquisition of Spring by VMware it was interesting to observe the increasing support for software such as RabbitMQ and GemFire.  My interest in AMQP and RabbitMQ has increased steadily over the past couple of years as the internet chatter on these topics increased.  This book was published earlier this year and given I've grown to like the format of the "in Action" series I spent a bit of time reading through it and trying out the examples.
 

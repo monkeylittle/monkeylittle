@@ -10,7 +10,7 @@ categories:
 - NoSQL
 ---
 
-<img class="alignright size-full wp-image-2547" src="http://www.monkeylittle.com/wp-content/uploads/2015/04/MongoDB-in-Action.jpg" alt="MongoDB in Action" width="257" height="320" />
+<img src="/assets/img/post/2012-10-30-mongodb-in-action/book-cover.jpg" class="pull-left img-fluid img-thumbnail mr-3"/>
 
 MongoDB gets a lot of press because it is considered the easiest NoSQL database to understand when transitioning from a relational database background.  This is due to support for relational features such as secondary indexes, explain plans and ad hoc queries.
 

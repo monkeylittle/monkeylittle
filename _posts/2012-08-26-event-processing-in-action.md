@@ -10,7 +10,7 @@ categories:
 - Enterprise Integration
 ---
 
-<img class="alignright size-full wp-image-2543" src="/assets/images/posts/event-processing-in-action/book-cover.jpg"/>
+<img src="/assets/img/post/2012-08-26-event-processing-in-action/book-cover.jpg" class="pull-left img-fluid img-thumbnail mr-3"/>
 
 I've been building systems using MOM and ESB for most of my career but have very rarely considered those to be event processing systems.  When contemplating the design of a system I am currently working on, the concept of events (as opposed to messages) intuitively seemed to be a better fit.  There is a significant amount of sharing of concepts between these types of systems so  I was interested to learn what made an architecture an event processing architecture.  This led me to pick up a copy of 'Event Processing in Action'.
 
@@ -20,11 +20,11 @@ I've been building systems using MOM and ESB for most of my career but have very
 
 The first chapter introduces event processing and contrasts an event based interactions with synchronous request driven interactions.  The concepts of event producers, consumers and intermediary event processing are covered briefly as are a number of event processing languages and tools.  The book utilises a fictional application (the Fast Flower Delivery application) to explain concepts throughout.  A high level description of the application is also provided.
 
+<!-- more -->
+
 **2. Principles of Event Processing**
 
 Event processing (or even driven architecture) is discussed in the context of a number of high level principles such as decoupling, push-style interactions and channel based event distribution.  Using a request-response event distribution mechanism is also covered briefly.  Event processing and SOA (service-oriented architecture) are compared before diving in to the main building blocks of event processing i.e. event channel, event type, event consumer, event producer, event processing agent, context and global state.  The notation used to describe these element is also introduced and it is expanded upon throughout the remainder of the book.
-
-<!-- more -->
 
 **The Building Blocks**
 

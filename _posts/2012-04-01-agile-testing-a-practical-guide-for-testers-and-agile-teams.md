@@ -10,19 +10,19 @@ categories:
 - Agile
 ---
 
-<img class="alignright" src="/assets/images/posts/agile-testing-a-practical-guide-for-testers-and-agile-teams/book-cover.jpg"/>
+<img src="/assets/img/post/2012-04-01-agile-testing-a-practical-guide-for-testers-and-agile-teams/book-cover.jpg" class="pull-left img-fluid img-thumbnail mr-3"/>
 
 I have worked with testers on an Agile team before and it has worked very well for both the team and the customer.  In my previous role at Bank of Ireland, testers who had come from a traditional testing background worked within our teams to help ensure we had quality deliverables at the end of each iteration.  It was different from traditional test approaches in that they were sitting with the team, collaborated constantly and were integral to the process of developing the solution.  I never found them critical of poor quality or guilty of ring fencing roles and responsibilities.  This was refreshing and without doubt a better way of ensuring quality than those I had experienced before.
 
 Recently, here at Paddy Power, we have been interviewing for a number of open [Agile tester positions](http://www.workwithpaddy.com).  I''m pretty sure I know what a good Agile tester looks like but I have often struggled to fully articulate what that entails.  I have had this book on my shelf for a couple of months and now I'm looking to it to help me fully understand what an Agile tester is.
+
+<!-- more -->
 
 **What Is Agile Testing Anyway?**
 
 The book starts by introducing Agile testing and comparing Agile to traditional testing.  I liked the way in which the activities of programmers and testers on an Agile team were explained using the terms "Technology-Facing Tests" and "Business-Facing Tests".  It is sometimes confusing for people, who come to understand that programmers do testing, why there is a need for a tester on an Agile team and these terms help clarify that need.  To quote the book directly, testers on an Agile team "..are working together with a team of people who all feel responsible for delivering the best possible quality..".
 
 I have recently had a number of conversations about having a tester in an Agile team or having a separate test team. Again, quoting form the book, "Testers are also on the developer team, because testing is a central component of agile software development.  Testers advocate for quality on behalf of the customer and assist the development team in delivering the maximum business value."  To steal a term from Lean, I think this is the best way to insure you "have quality built in".  This whole team approach also ensures that the "...team thinks constantly about designing code for testability."
-
-<!-- more -->
 
 **Ten Principles for Agile Testers**
 
