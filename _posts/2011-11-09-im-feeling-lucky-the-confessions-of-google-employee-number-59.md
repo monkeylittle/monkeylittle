@@ -9,7 +9,7 @@ categories:
 - Book Review
 ---
 
-<img class="alignright" src="/assets/images/posts/im-feeling-lucky-the-confessions-of-google-employee-number-59/book-cover.jpg"/>
+<img src="/assets/img/post/2011-11-09-im-feeling-lucky-the-confessions-of-google-employee-number-59/book-cover.jpg" class="pull-left img-fluid img-thumbnail mr-3"/>
 
 I think people in the technology industry are universally interested in the inner workings of Google. Over the years, so many myths and legends have been born that allude to the largess and brilliance of the search giant. Frequently people post blogs purporting to provide some insight into the interviewing process, salary and bonus structures, staff parties, experimental technology, new market entry etc. Given this interest, I suspect that I'm Feeling Lucky by Douglas Edwards has/will do rather well.
 

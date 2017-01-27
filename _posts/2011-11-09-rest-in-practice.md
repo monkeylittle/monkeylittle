@@ -10,7 +10,7 @@ categories:
 - Representational State Transfer
 ---
 
-<img class="alignright" src="/assets/images/posts/rest-in-practice/book-cover.jpg"/>
+<img src="/assets/img/post/2011-11-09-rest-in-practice/book-cover.jpg" class="pull-left img-fluid img-thumbnail mr-3"/>
 
 Ever since Fielding published his dissertation on [Architectural Styles and the Design of Network-based Software Architectures](http://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm), the momentum behind the Representational State Transfer (REST) architectural style has been building apace. Of course, as with the many new technologies, practices and theories adopted by the software industry, REST is progressing along what Gartner call the [Hype Cycle](http://en.wikipedia.org/wiki/Hype_cycle).
 
@@ -18,11 +18,11 @@ Since Fielding's dissertation, REST has been adopted widely by the software indu
 
 As with any new technology, creating frameworks that make it easy to adopt that technology can, and in the case of REST has, become a double edge sword. I say this because making technology adoption easy also makes it easy for those implementing that technology to get by with a minimum of understanding. 'REST in Practice' aims to inform those adopting REST by providing a compressive guide to REST and building the readers knowledge progressively from start to finish.
 
+<!-- more -->
+
 **The Web as a Platform for Building Distributed Systems**
 
 Rest in Practice begins by providing a high level description of the infrastructure of the web including resources, URIs, caching etc. The term 'Resource' is defined along with its relationship to URIs. Resources are of course fundamental to REST and it is important to distinguish between a resource and its representation. Brief mention is given to how the web supports loose coupling, business processes, consistency and scalability. The introduction of the Richardson Maturity Model is particularly useful in understanding what level your REST services are at and where you might need them to be. The notion of *hypermedia as the engine of application state* is introduced as part of the model and is covered in more detail later.
-
-<!-- more -->
 
 **Introducing Restbucks**
 

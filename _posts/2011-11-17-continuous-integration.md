@@ -10,7 +10,7 @@ categories:
 - Continuous Integration
 ---
 
-<img class="alignright" src="/assets/images/posts/continuous-integration/book-cover.jpg"/>
+<img src="/assets/img/post/2011-11-17-continuous-integration/book-cover.jpg" class="pull-left img-fluid img-thumbnail mr-3"/>
 
 I have been building and maintaining continuous integration (CI) environments for several years now and would consider myself well versed in the practice. There really is a wealth of information on CI and people such as Martin Fowler and John Smart do a great job as advocates by providing a solid understanding and practical advice. Due to the amount of freely distributable software supporting the establishment of CI environments, acquiring knowledge of the subject is the biggest entry cost.
 
@@ -19,6 +19,8 @@ For that reason, it was with much anticipation that 'Continuous Integration' was
 **Getting Started**
 
 The book starts of with a gentle introduction to the subject providing a preview of the material to come. Chances are that if you have purchased this book that you already know roughly what CI comprises and how it works so you won't learn a lot here. Still though, its good to lay some ground work and review that activities that typically occur as part of a CI system.
+
+<!-- more -->
 
 **Introducing Continuous Integration**
 
@@ -31,8 +33,6 @@ Next we cover a number of practices that encapsulate what I would call the disci
 - Avoid Broken Code
 
 These disciplines must be followed religiously because if one person on the team fails to adhere to them, the entire CI system is devalued. My experiences have always reflected the the broken windows theory, as the frequency of broken builds increases, people become more tolerant of them and thus the build breaks more often.
-
-<!-- more -->
 
 **Reducing Risks Using CI**
 
