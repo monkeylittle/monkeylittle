@@ -2,27 +2,39 @@
 layout: default
 ---
 
-{{ content }}
+<div class="row">
+  <div class="col-8">
 
-{% for post in paginator.posts %}
+    {{ content }}
 
-{% assign author = site.data.people[post.author] %}
+    {% for post in paginator.posts %}
 
-<h2>
-  <a href="{{ post.url }}">{{ post.title }}</a>
-</h2>
-<p class="lead">
-  by <a href="#">{{ author.name }}</a>
-</p>
-<p><span class="fa fa-clock-o"></span> Posted on {{ post.date | date: '%B %d, %Y' }}</p>
+    {% assign author = site.data.people[post.author] %}
 
-<hr>
+    <h2>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </h2>
+    <p class="lead">
+      by <a href="#">{{ author.name }}</a>
+    </p>
+    <p><span class="fa fa-clock-o"></span> Posted on {{ post.date | date: '%B %d, %Y' }}</p>
 
-{{ post.excerpt }}
-<a class="btn btn-primary" href="{{ post.url }}">Read More <span class="fa fa-chevron-right"></span></a>
+    <hr>
 
-<hr>
+    {{ post.excerpt }}
+    <a class="btn btn-primary" href="{{ post.url }}">Read More <span class="fa fa-chevron-right"></span></a>
 
-{% endfor %}
+    <hr>
 
-{% include pagination.html %}
+    {% endfor %}
+
+    {% include pagination.html %}
+
+  </div>
+
+  <div class="col-4">
+
+  {% include sidebar.html %}
+
+  </div>
+</div>
