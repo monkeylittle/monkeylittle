@@ -10,7 +10,7 @@ categories:
 - Rich Faces
 ---
 
-<img class="alignright" src="/assets/images/posts/jboss-rich-faces-3-3/jboss-richfaces-3.3.jpg"/>
+<img src="/assets/img/post/2009-12-16-jboss-rich-faces-3-3/jboss-richfaces-3.3.jpg" class="pull-left img-fluid img-thumbnail mr-3"/>
 
 I have been developing with JBoss Rich Faces for a couple of years now and recently I decided to invest in a couple of books on the subject to try and obtain a better (more rounded) understanding of the framework. When purchasing books related to frameworks that already have good reference documentation I'm always sceptical that the book will provide additional insight above and beyond the freely available references.
 

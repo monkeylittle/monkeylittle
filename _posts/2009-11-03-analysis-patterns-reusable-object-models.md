@@ -10,7 +10,7 @@ categories:
 - Software Design &amp; Architecture
 ---
 
-<img class="alignright" src="/assets/images/posts/analysis-patterns-reusable-object-models/analysis-patterns.jpg"/>
+<img src="/assets/img/post/2009-11-03-analysis-patterns-reusable-object-models/analysis-patterns.jpg" class="pull-left img-fluid img-thumbnail mr-3"/>
 
 Among the resources I enjoy browsing online is Martin Fowler's own website (www.martinfowler.com) which contains a wealth of information in the form of blogs, articles etc. Some time ago I began to read the category of the articles section that is dedicated to the Analysis Patterns book and found the patterns described interested me enough to invest in a copy of the book.
 

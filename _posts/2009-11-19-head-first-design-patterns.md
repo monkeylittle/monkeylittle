@@ -10,7 +10,7 @@ categories:
 - Software Design & Architecture
 ---
 
-<img class="alignright" src="/assets/images/posts/head-first-design-patterns/head-first-design-patterns.jpg"/>
+<img src="/assets/img/post/2009-11-19-head-first-design-patterns/head-first-design-patterns.jpg" class="pull-left img-fluid img-thumbnail mr-3"/>
 
 Design Patterns: Elements of Reusable Object-Oriented Software' by Gamma et. al. is a book credited with popularising design patterns and is probably still today the most popular on the subject. The book itself provides an introduction to design patterns, how they should be presented and the well known design patterns catalog. Each design pattern is presented in a consistent manner, describing different aspects of the pattern such as name, intent, motivation, structure, consequences etc.
 

@@ -10,7 +10,7 @@ categories:
 - Rich Faces
 ---
 
-<img class="alignright" src="/assets/images/posts/practical-richfaces/practical-richfaces.jpg"/>
+<img src="/assets/img/post/2010-01-08-practical-richfaces/practical-richfaces.jpg" class="pull-left img-fluid img-thumbnail mr-3"/>
 
 As I had mentioned in a previous post, I recently invested in a couple of books on JBoss RichFaces. Having read and reviewed [JBoss Rich Faces 3.3]({% post_url 2009-12-16-jboss-rich-faces-3-3 %}) I set about doing the same for the other book, Practical RichFaces.
 
