@@ -10,7 +10,7 @@ categories:
 - Agile
 ---
 
-<img class="alignright" src="/assets/images/posts/succeeding-with-agile/book-cover.jpg"/>
+<img src="/assets/img/post/2011-02-02-succeeding-with-agile/book-cover.jpg" class="pull-left img-fluid img-thumbnail mr-3"/>
 
 Mike Cohn is a well respected author, trainer and coach. I follow his blog at [Mountain Goat Software](http://blog.mountaingoatsoftware.com/) avidly and am hoping to attend his Certified Scrum Master training in the near future. In the interim, I obtained a copy of the three books he has published and I will be working my way through them as time permits.
 

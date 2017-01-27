@@ -10,7 +10,7 @@ categories:
 - Agile
 ---
 
-<img class="alignright" src="/assets/images/posts/user-stories-applied/book-cover.jpg"/>
+<img src="/assets/img/post/2011-02-22-user-stories-applied/book-cover.jpg" class="pull-left img-fluid img-thumbnail mr-3"/>
 
 User stories are critical to the way in which an agile team discovers and delivers new features. They primarily act as place holders for features which form the product backlog. As the agile team begins a release or iteration, a planning exercise is performed in which user stories will be refined and estimates will be provided (with greater degrees of certainty as the process continues).
 

@@ -10,7 +10,7 @@ categories:
 - Agile
 ---
 
-<img class="alignright" src="/assets/images/posts/agile-retrospectives-making-good-teams-great/book-cover.jpg"/>
+<img src="/assets/img/post/2011-06-20-agile-retrospectives-making-good-teams-great/book-cover.jpg" class="pull-left img-fluid img-thumbnail mr-3"/>
 
 The principle purpose of an Agile retrospective is to reflect on the recently completed Sprint in order to adapt the teams practices and improve the way in which they deliver software. Most teams will begin by asking three simple questions:
 
@@ -19,6 +19,8 @@ The principle purpose of an Agile retrospective is to reflect on the recently co
 - What changes can we make to improve?
 
 Early on, I took this rather simplistic approach and to be quite honest very little insight was generated. There were still benefits in that the team were sharing their experiences and learning from one another but this became stale very quickly. I needed to learn more about facilitating Agile retrospectives and so invested in a copy of Agile Retrospectives by Esther Derby and Diana Larsen.
+
+<!-- more -->
 
 **Helping Your Team Inspect and Adapt**
 
@@ -35,8 +37,6 @@ An alternative structure is recommended that includes:
 Now, I'm not particularly gifted when it comes to facilitating meetings so I like to have a well structured meeting with a pre-agreed agenda. I like the look of this structure as it communicates what we are trying to achieve and our approach.
 
 Others might be more comfortable with less structure but to that I would say, even if you are good at facilitating meetings the participants may not be good at participating. You really have to find your own comfort zone when it comes to how much preparation and structure.
-
-<!-- more -->
 
 **A Retrospective Custom-Fit to Your Team**
 

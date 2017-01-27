@@ -10,7 +10,7 @@ categories:
 - Agile
 ---
 
-<img class="alignright" src="/assets/images/posts/agile-estimating-and-planning/book-cover.jpg"/>
+<img src="/assets/img/post/2011-06-13-agile-estimating-and-planning/book-cover.jpg" class="pull-left img-fluid img-thumbnail mr-3"/>
 
 Estimating and planning are inherently difficult and the mechanisms that Agile apply to these efforts differ significantly in approach and execution. In this book, Mike describes what makes planning so difficult and how an alternative approach can help alleviate the issues that arise with traditional approaches.
 
@@ -19,6 +19,8 @@ Again the quotes that Mike has scattered throughout the book capture the essence
 **Part I - The Problem and the Goal**
 
 The first couple of chapters establish why estimating and planning are difficult but also why they are essential. The primary goals of estimating are defined as reducing risk, reducing uncertainty, supporting decision making and establishing trust. The purpose of planning is defined as "*finding the optimal answer to the overall product development question of what to build*". Interestingly, a good plan is defined as one that "*is sufficiently reliable*" which fits well with Agile generally and the principle that the level of planning, estimating, analysis etc. should be 'just enough' or 'barely sufficient'.
+
+<!-- more -->
 
 So what are the reasons that traditional planning fails? Traditional planning focuses on activities as opposed to features which distracts from what we must deliver..customer value! Activities tend to be intricately linked and as a result, lateness is often passed to dependent activities yet the possibility of early execution of an activity requires all prerequisite activities to complete early. A number of additional reasons are discussed yet the one that resonates most with me is that "*Estimates Become Commitments*".
 
@@ -31,8 +33,6 @@ An Agile approach attempts to minimise or remove the problems associated with tr
 > Field Marshal Helmuth Graf von Moltke, "No plan survives contact with the enemy."
 
 > General George S. Paton, "A good plan violently executed now is better than a perfect plan executed next week."
-
-<!-- more -->
 
 **Part II - Estimating Size**
 
