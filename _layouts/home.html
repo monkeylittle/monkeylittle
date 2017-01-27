@@ -22,8 +22,10 @@ layout: default
     <hr>
 
     {{ post.excerpt }}
+    {% if post.excerpt != post.content %}
     <a class="btn btn-primary" href="{{ post.url }}">Read More <span class="fa fa-chevron-right"></span></a>
-
+    {% endif %}
+    
     <hr>
 
     {% endfor %}
