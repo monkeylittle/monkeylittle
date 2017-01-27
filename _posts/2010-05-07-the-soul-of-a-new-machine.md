@@ -9,7 +9,7 @@ categories:
 - Book Review
 ---
 
-<img class="alignright" src="/assets/images/posts/the-soul-of-a-new-machine/the-soul-of-a-new-machine.jpg" alt="The Soul of a New Machine" width="217" height="320"/>
+<img src="/assets/img/post/2010-05-07-the-soul-of-a-new-machine/the-soul-of-a-new-machine.jpg" class="pull-left img-fluid img-thumbnail mr-3"/>
 
 I am currently undertaking an MSc in Advanced Software Engineering at UCD, Dublin and recently took a module on 'Software Engineering Process Frameworks'. As part of the pre-reading for this module the class were asked to read Tracey Kidder's 'The Soul of a New Machine'.
 

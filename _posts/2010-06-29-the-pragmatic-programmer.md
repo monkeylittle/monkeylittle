@@ -9,11 +9,11 @@ categories:
 - Book Review
 ---
 
-<img class="alignright" src="/assets/images/posts/the-pragmatic-programmer/book-cover.jpg"/>
+<img src="/assets/img/post/2010-06-29-the-pragmatic-programmer/book-cover.jpg" class="pull-left img-fluid img-thumbnail mr-3"/>
 
 If you are a software developer, The Pragmatic Programmer is not just a book but an arm around your shoulder, the mentor that you never had.  It has rightly earned its place on the bookshelf of every self respecting software developer in the land.  First published in 1999, it is as relevant today as ever.
 
-Ron Jefferies said about this book 'As with any such book, much of the advice is something you already know. Much of it is also something you have forgotten to focus on lately.'.' You may or may not learn anything new, but this book will remind you what is important.
+Ron Jefferies said about this book 'As with any such book, much of the advice is something you already know. Much of it is also something you have forgotten to focus on lately.'. You may or may not learn anything new, but this book will remind you what is important.
 
 <!-- more -->
 

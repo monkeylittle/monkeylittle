@@ -9,7 +9,7 @@ categories:
 - Book Review
 ---
 
-<img class="alignright" src="/assets/images/posts/pragmatic-thinking-learning/pragmatic-thinking-learning.jpg"/>
+<img src="/assets/img/post/2010-06-10-pragmatic-thinking-learning/pragmatic-thinking-learning.jpg" class="pull-left img-fluid img-thumbnail mr-3"/>
 
 Recently, I have taken to reading books concerned more with process of software development than the nuts and bolts of working with one language/framework/methodology or another.  The Pragmatic Programmer is one such popular book that inspired a whole range of such books under The Pragmatic Bookshelf label.  Another book under this label is "Pragmatic Thinking & Learning" by Andy Hunt.
 

@@ -9,7 +9,7 @@ categories:
 - Book Review
 ---
 
-<img class="alignright" src="/assets/images/posts/jbpm-developer-guide/jbpm-developer-guide.jpg"/>
+<img src="/assets/img/post/2010-03-01-jbpm-developer-guide/jbpm-developer-guide.jpg" class="pull-left img-fluid img-thumbnail mr-3"/>
 
 Business Process Management (BPM) has been around in one guise or another for quite a while now and most people have had some exposure to its many facets. With so much promised, it is easy to see why it has generated so much interest.
 
