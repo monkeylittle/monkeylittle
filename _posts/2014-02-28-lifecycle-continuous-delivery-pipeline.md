@@ -14,7 +14,7 @@ tags:
 
 Following on from my recent post, [PaaS and Continuous Delivery - My 12 Month Journey]({% post_url 2014-02-13-paas-continuous-delivery-12-month-journey %}), I wanted to delve deeper into the lifecycle of the staged delivery pipeline.  When working in a heterogeneous technology environment there exists a requirement to support multiple language runtimes, application containers, message brokers, storage engines etc.  For this reason, the lifecycle must be abstracted from the implementation technology.
 
-![Staged Delivery Lifecycle](/assets/images/posts/lifecycle-continuous-delivery-pipeline/staged-delivery-pipeline-lifecycle.png)
+<img src="/assets/img/post/2014-02-28-lifecycle-continuous-delivery-pipeline/staged-delivery-pipeline-lifecycle.png" class="img-fluid img-thumbnail">
 
 For the remainder of this post I will propose a number of stages and the steps within each stage.
 
@@ -24,7 +24,7 @@ For the remainder of this post I will propose a number of stages and the steps w
 
 From the abstract, it's straightforward to identify pipeline stages from your current release process.  What you will discover though, is that you may have to rethink your pipeline to production to fit into this automated process.  An example of this is depicted below.
 
-![Staged Delivery Pipeline](/assets/images/posts/lifecycle-continuous-delivery-pipeline/staged-delivery-pipeline.png)
+<img src="/assets/img/post/2014-02-28-lifecycle-continuous-delivery-pipeline/staged-delivery-pipeline.png" class="img-fluid img-thumbnail">
 
 Before digging into the detail of each stage, it's important to understand how some of the guiding principles used to design the pipeline stages.  They were:
 
@@ -45,7 +45,7 @@ I'll now describe each stage in more detail.
 
 The code commit stage is triggered by a code check-in to the SCM repository.  The purpose of this stage is to provide immediate feedback to the developer by compiling the code and running unit tests.  If development is not in pairs it's assumed that a code review has also occurred prior to committing to the repository.
 
-![Code Commit Stage](/assets/images/posts/lifecycle-continuous-delivery-pipeline/code-commit-stage.png)
+<img src="/assets/img/post/2014-02-28-lifecycle-continuous-delivery-pipeline/code-commit-stage.png" class="img-fluid img-thumbnail">
 
 The *Checkout* step is self-explanatory and simply checks out the repository locally on the CI server.
 
@@ -63,7 +63,7 @@ Finally, the *Notify* step notifies possible culprits of build failure or on suc
 
 The main purpose of the build stage is to create potentially releasable software artefacts that become the 'golden copy'.
 
-![Build Stage](/assets/images/posts/lifecycle-continuous-delivery-pipeline/build-stage.png)
+<img src="/assets/img/post/2014-02-28-lifecycle-continuous-delivery-pipeline/build-stage.png" class="img-fluid img-thumbnail">
 
 *Checkout* checks out the source from the local repository (as opposed to the remote or origin).  The build, pre-unit-test, unit-test and post-unit-test steps are repeated.
 
@@ -77,7 +77,7 @@ At this point you can be reasonably confident that the software artefacts are vi
 
 This stage executes the automated acceptance test suite against a production like (scaled down) environment.
 
-![Acceptance Test Stage](/assets/images/posts/lifecycle-continuous-delivery-pipeline/acceptance-test-stage.png)
+<img src="/assets/img/post/2014-02-28-lifecycle-continuous-delivery-pipeline/acceptance-test-stage.png" class="img-fluid img-thumbnail">
 
 Following *Checkout*, the CI server interacts with the PaaS to perform the *Setup Environment* step.  During this step the PaaS provisions the infrastructure required by the application and overlays software and configuration as per the application blueprint.  On completion of the provisioning activity, the environment contextual information (IP addresses etc.) is exported so that it is available within the subsequent test steps.
 
@@ -91,7 +91,7 @@ On completion of the acceptance test execution the *Teardown Environment* step u
 
 The Performance Test stage provisions an application environment and executes a suite of performance tests.  Because the environment provisioned is a scaled down 'production like' environment I view this as a performance trend stage.  What is asserted is that the variation in performance from previous builds is acceptable.  This is not the same as testing for absolute performance.
 
-![Performance Test Stage](/assets/images/posts/lifecycle-continuous-delivery-pipeline/performance-test-stage.png)
+<img src="/assets/img/post/2014-02-28-lifecycle-continuous-delivery-pipeline/performance-test-stage.png" class="img-fluid img-thumbnail">
 
 I'm not going to describe each step within this stage as the steps are either the same or similar to those within previous stages.
 
@@ -99,13 +99,13 @@ I'm not going to describe each step within this stage as the steps are either th
 
 This [Simian Army](http://techblog.netflix.com/2011/07/netflix-simian-army.html) inspired stage performs the exact same steps and activities as the acceptance test stage.  The intent is to execute the automated acceptance test suite during the *Stability Test* step.  The difference being that during the execution of the acceptance tests, the orchestration engine executes failure scenarios.  Failure scenarios can include node failure, resource starvation etc.
 
-![Stability Test Stage](/assets/images/posts/lifecycle-continuous-delivery-pipeline/stability-test-stage.png)
+<img src="/assets/img/post/2014-02-28-lifecycle-continuous-delivery-pipeline/stability-test-stage.png" class="img-fluid img-thumbnail">
 
 **Manual Test**
 
 On passing the previous stages focused on automated testing of the application, a manual decision can be taken to promote a potentially releasable artefact to a manual test environment.  This decision is typically based on the new feature set available in the release.
 
-![Manual Stage](/assets/images/posts/lifecycle-continuous-delivery-pipeline/manual-test-stage.png)
+<img src="/assets/img/post/2014-02-28-lifecycle-continuous-delivery-pipeline/manual-test-stage.png" class="img-fluid img-thumbnail">
 
 The *Push Branch* step pushes the local branch to the remote SCM repository.
 
@@ -117,7 +117,7 @@ The *Promote* step promotes the software artefacts stored in the artefact reposi
 
 At last, *Production*
 
-![Production Stage](/assets/images/posts/lifecycle-continuous-delivery-pipeline/production-stage.png)
+<img src="/assets/img/post/2014-02-28-lifecycle-continuous-delivery-pipeline/production-stage.png" class="img-fluid img-thumbnail">
 
 Often, this stage is more complex that illustrated and comprises of multiple segments of production and a staged release.  Nevertheless, I've described a fairly robust continuous delivery pipeline lifecycle that goes beyond what many practice today.  I strongly believe this capability provides competitive advantage for both technology-enabled and technology-led business domains.  If you are not working to release value to production quicker you can be sure your competitors are...and they are going to eat your lunch!!
 

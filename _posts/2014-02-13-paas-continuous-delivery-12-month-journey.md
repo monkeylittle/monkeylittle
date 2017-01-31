@@ -70,11 +70,11 @@ We chose to adopt a PaaS capability with specific focus on being as open as poss
 
 Very early in our evaluation of PaaS providers we started to look at PaaS along two dimensions.  I've depicted these axes using the Gartner Magic Quadrant methodology below.
 
-![PaaS Evaluation](/assets/images/posts/paas-continuous-delivery-12-month-journey/paas-evaluation.png)
+<img src="/assets/img/post/2014-02-13-paas-continuous-delivery-12-month-journey/paas-evaluation.png" class="img-fluid img-thumbnail">
 
 In my view, the majority of the offerings from existing hardware or virtualisation providers played very much in the bottom left quadrant.  There were quite a few new entrants playing in the right and top right quadrants but therein lies the problem.  PaaS in general is very immature and there is significant fragmentation and little standardisation in this space.  So to make a buy decision on the right hand side of the Magic Quadrant is quite a punt.
 
-![Gartner Hype Cycle](/assets/images/posts/paas-continuous-delivery-12-month-journey/gartner-hype-cycle.png)
+<img src="/assets/img/post/2014-02-13-paas-continuous-delivery-12-month-journey/gartner-hype-cycle.png" class="img-fluid img-thumbnail">
 
 My decision was to build our own PaaS but to leverage established toolsets to provide the majority of the functionality (I'll get into this a bit more later!).  This way we are not reinventing the wheel but are also maintaining the ability to change direction with a lower cost of divorce than we would have with a full stack vendor solution.
 
@@ -84,7 +84,7 @@ An early mistake was to allow a misunderstanding to develop around Continuous De
 
 The difference between them is really quite simple; the implications are not so trivial.
 
-![Staged Delivery Pipeline](/assets/images/posts/paas-continuous-delivery-12-month-journey/staged-delivery-pipeline.png)
+<img src="/assets/img/post/2014-02-13-paas-continuous-delivery-12-month-journey/staged-delivery-pipeline.png" class="img-fluid img-thumbnail">
 
 When implementing Continuous Deployment all of the stage transitions (arrows) are fully automated with automatic promotion from one stage to the next.  When implementing Continuous Delivery, all stage transitions are fully automated but require manual promotion for a number of the stage transitions.  Typically, Continuous Delivery requires that the final promotion to production be manually triggered.
 
@@ -94,7 +94,7 @@ Broadly speaking, when implementing a Continuous Deployment pipeline the level o
 
 The complexity of PaaS, Continuous Delivery and all that surrounds it is equal to the number of moving parts multiplied by the amount of jargon that surrounds it.  I hope I have not added to it but if I have, I think this concept map will help bring clarity.
 
-![Continuous Delivery Tube Map](/assets/images/posts/paas-continuous-delivery-12-month-journey/continuous-delivery-tube-map.png)
+<img src="/assets/img/post/2014-02-13-paas-continuous-delivery-12-month-journey/continuous-delivery-tube-map.png" class="img-fluid img-thumbnail">
 
 I've depicted the four main themes with which I have worked over the past 12 months.  Within those themes, I have identified the concepts as well as concepts that are shared.  I'll iterate through the main concepts we have worked on.
 
@@ -102,7 +102,7 @@ I've depicted the four main themes with which I have worked over the past 12 mon
 
 When we speak about the deployment pipeline it immediately brings to mind the implementation and all the details that go along with it.  However, one of our objectives was to be language runtime agnostic and so in reality we would be developing a number of pipeline implementations.  The most important thing for us was to define the lifecycle of the staged delivery pipeline.
 
-![Staged Delivery Pipeline Lifecycle](/assets/images/posts/paas-continuous-delivery-12-month-journey/staged-delivery-pipeline-lifecycle.png)
+<img src="/assets/img/post/2014-02-13-paas-continuous-delivery-12-month-journey/staged-delivery-pipeline-lifecycle.png" class="img-fluid img-thumbnail">
 
 Our staged delivery pipeline looks very much like Figure 5.  The stages might include:
 
@@ -160,7 +160,7 @@ This hierarchy helps to achieve consistency where required but also allows flexi
 
 The 'Application Blueprint' is a term we borrowed from the guys at GigaSpaces.  This is how they refer to an application as deployed via Cloudify.  While we don't use many of the Cloudify features, we do use it to manage the dependencies between 'Application Services' and to stereotype the nodes as they are being provisioned.  We also abstract our use of Cloudify from the consumers of our PaaS services for the reasons I identified earlier (i.e. cost of divorce should the PaaS marketplace start to converge).
 
-![Application Blueprint](/assets/images/posts/paas-continuous-delivery-12-month-journey/application-blueprint.png)
+<img src="/assets/img/post/2014-02-13-paas-continuous-delivery-12-month-journey/application-blueprint.png" class="img-fluid img-thumbnail">
 
 *Note: Each cluster represents an application service tier and each instance (or node) represents an application service.  The dependency relationship is a directed graph as opposed to a tree as Figure 6 depicts.*
 
@@ -182,7 +182,7 @@ My fingers are now bleeding so I want to wrap this up, but I can't finish withou
 
 The first is Log Aggregation and Log Analytics.  Because many of our environments are transient, shipping logs (i.e. aggregation) is really important.  Using Logstash for log aggregation has the added advantage that not only does it support aggregation and search but it also supports building dashboards via Kibana to provide additional insight.  The PaaS itself uses Kibana in this way.
 
-![Kibana Dashboard](/assets/images/posts/paas-continuous-delivery-12-month-journey/kibana-dashboard.png)
+<img src="/assets/img/post/2014-02-13-paas-continuous-delivery-12-month-journey/kibana-dashboard.png" class="img-fluid img-thumbnail">
 
 The second such service is Application Performance Monitoring (APM).  In its best form, agents intelligently and dynamically instrument the code to extract monitoring information.  This creates great insight during the build, test, deploy and execute phases of the application lifecycle.
 

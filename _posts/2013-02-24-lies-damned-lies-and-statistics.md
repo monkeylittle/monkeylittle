@@ -22,7 +22,7 @@ This sort of lazy, dumbed down, manage by numbers approach is why many organisat
 
 <!-- more -->
 
-<img class="alignleft wp-image-2500 size-full" src="/assets/images/posts/lies-damned-lies-and-statistics/battery-hens.jpeg" alt="Battery Hens" width="257" height="196" />
+<img src="/assets/img/post/2013-02-14-lies-damned-lies-and-statistics/battery-hens.jpeg" class="img-fluid img-thumbnail">
 
 An example that I have seen a number of times is that of maximising office densities.  An organisation has been growing (or shrinking) and the executive committee decide that they must maximise the return on their office space.  A manager decides that the best way to achieve this is to increase the densities of workers in the office space by fitting more people in.  Or perhaps using hot desks or if he is a really innovative manager he might even decide to allow people to work from home.  "With the money that I'll save the company I'll be in line for that promotion" (he thinks...and sometimes, sadly, this even happens).
 

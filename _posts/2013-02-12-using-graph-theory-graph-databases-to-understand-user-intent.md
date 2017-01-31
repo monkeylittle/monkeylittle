@@ -9,7 +9,7 @@ categories:
 - NoSQL
 ---
 
-<img class="alignright size-full wp-image-2523" src="http://www.monkeylittle.com/wp-content/uploads/2013/02/Neo4j1.jpg" alt="Neo4j" width="182" height="50" />
+<img src="/assets/img/post/2013-02-12-using-graph-theory-graph-databases-to-understand-user-intent/neo4j-logo.png" class="img-fluid img-thumbnail pull-left mx-3">
 
 I was in London recently at the [Cloud Expo Europe](http://www.cloudexpoeurope.com/) and had the opportunity to attend the [Neo4j](http://www.neo4j.org/) User Group meetup hosted at [Skills Matter](http://skillsmatter.com/).  Michael Cutler  of [Tumra](http://tumra.com/) described how they used graph based natural language processing algorithms to understand user intent.
 
