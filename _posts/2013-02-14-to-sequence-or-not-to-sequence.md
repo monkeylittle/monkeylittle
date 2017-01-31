@@ -15,7 +15,7 @@ I was recently involved in a discussion about queuing in messaging systems and i
 
 I've found queuing concepts are best explained using an analogy and in this instance a useful one is that of taking a flight (I'm not an expert in airline procedure so forgive any deviations from reality).  Lets assume that the procedure is as follows:
 
-<img class="aligncenter size-full wp-image-1854" alt="Airline Check In Procedure" src="http://thoughtforge.net/wp-content/uploads/2013/02/Airline-Check-In-Procedure.png" width="450" height="82" />
+<img src="/assets/img/post/2013-02-14-to-sequence-or-not-to-sequence/airline-check-in-procedure.png" class="img-fluid img-thumbnail">
 
 **Booking Your Ticket**
 
