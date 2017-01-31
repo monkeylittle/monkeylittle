@@ -13,6 +13,9 @@ layout: default
 </p>
 
 <p><span class="fa fa-clock-o"></span> Posted on {{ page.date | date: '%B %d, %Y' }}</p>
+{% if page.tags.size > 0 %}
+<p><span class="fa fa-tags"></span> {{ page.tags | first }}{% for tag in page.tags offset:1 %}, {{ tag }}{% endfor %}</p>
+{% endif %}
 
 <hr>
 

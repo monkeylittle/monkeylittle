@@ -18,14 +18,16 @@ layout: default
       by <a href="#">{{ author.name }}</a>
     </p>
     <p><span class="fa fa-clock-o"></span> Posted on {{ post.date | date: '%B %d, %Y' }}</p>
-
+    {% if post.tags.size > 0 %}
+    <p><span class="fa fa-tags"></span> {{ post.tags | first }}{% for tag in post.tags offset:1 %}, {{ tag }}{% endfor %}</p>
+    {% endif %}
     <hr>
 
     {{ post.excerpt }}
     {% if post.excerpt != post.content %}
     <a class="btn btn-primary" href="{{ post.url }}">Read More <span class="fa fa-chevron-right"></span></a>
     {% endif %}
-    
+
     <hr>
 
     {% endfor %}
