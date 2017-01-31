@@ -13,7 +13,7 @@ I was reading a post on [Mapping the Cloud/PaaS Stack](http://natishalom.typepad
 
 In this context, productivity is a measure of how efficiently value can be delivered from inception through to realisation (you might think of this as from requirement to production).  Control is the ability to specify and manage the details of the compute, network and storage infrastructure, deployment topology, operational management etc.
 
-<img class="aligncenter size-full wp-image-2520" src="http://www.monkeylittle.com/wp-content/uploads/2013/02/classifying-cloud-and-cloud-providers1.png" alt="Classifying Cloud and Cloud Providers" width="800" height="488" />
+<img src="/assets/img/post/2013-02-13-classifying-cloud-and-cloud-providers/classifying-cloud-and-cloud-providers.png" class="img-fluid img-thumbnail mx-3">
 
 If we step back for a moment and consider cloud adoption in a typical corporate environment it helps one to understand why this classification is useful.
 
