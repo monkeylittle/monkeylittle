@@ -8,7 +8,7 @@
     <div class="navbar-nav">
       {% for nav_item in site.data.navigation %}
       <li>
-        <a class="nav-item nav-link disabled" href="#">{{ nav_item.name }}</a>
+        <a class="nav-item nav-link{% if nav_item.enabled != true %} disabled{% endif %}" href="{{ nav_item.url }}">{{ nav_item.name }}</a>
       </li>
       {% endfor %}
     </div>

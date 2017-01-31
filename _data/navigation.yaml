@@ -1,5 +1,7 @@
 - name: About
+  enabled: true
   url: /about/
 
 - name: Contact
+  enabled: false
   url: /contact/
