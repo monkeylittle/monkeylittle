@@ -12,7 +12,7 @@ tags:
 - Continuous Integration
 ---
 
-<img class="alignright" src="http://www.monkeylittle.com/wp-content/uploads/2013/03/old-man.jpg" alt="Old Man" width="200" height="434"/>
+<img src="/assets/img/post/2013-03-11-continuous-delivery-a-maturity-assessment-model/old-man.jpg" class="img-fluid img-thumbnail pull-left mx-3">
 
 [ThoughtWorks](http://www.thoughtworks.com/) recently published a paper that proposed a [maturity assessment model for continuous delivery](http://info.thoughtworks.com/Continuous-Delivery-Maturity-Model.html). Technology led companies continue to eat the lunch of traditional companies who are struggling to innovate at the same pace as their younger and more dynamic counterparts. Companies such as Netflix, Amazon, Google and Apple strive to reduce the cycle time from concept to reality so are able to give their customers what they want before any of their lumbering competitors.
 

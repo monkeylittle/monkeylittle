@@ -43,7 +43,7 @@ But what do we do with those domain events?
 
 What is now possible, is that we can create local data sources and synchronise those data sources through consumption of domain events.  The fraud detection system, the ledger system and the personalised offering system all have their own local copy of the data and can operate upon that data without much consideration of where the data came from or who else is using the same data.  This is the Query part of CQRS...but what about the Command part?
 
-![Command Query Responsibility Segregation](/assets/images/posts/ddd-cdc-cqrs-perfect-bedfellows/command-query-responsibility-segregation.png)
+<img src="/assets/img/post/2013-09-17-ddd-cdc-cqrs-perfect-bedfellows/command-query-responsibility-segregation.png" class="img-fluid img-thumbnail mx-3">
 
 Domain events help distribute updates to interested parties but what if those interested parties want to perform updates (or invoke commands)?
 

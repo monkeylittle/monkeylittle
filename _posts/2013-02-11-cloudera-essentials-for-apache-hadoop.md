@@ -10,7 +10,7 @@ categories:
 - NoSQL
 ---
 
-<img class="alignright size-full wp-image-2596" src="http://www.monkeylittle.com/wp-content/uploads/2013/02/Hadoop.png" alt="Hadoop" width="100" height="100" />
+<img src="/assets/img/post/2013-02-11-cloudera-essentials-for-apache-hadoop/hadoop-logo.png" class="img-fluid img-thumbnail pull-left mx-3">
 
 It has been interesting to see a number of companies (such as [Cloudera](http://www.cloudera.com) and [Hortonworks](http://hortonworks.com/)) take on the mantle of providing enterprise services for Hadoop and its ecosystem.  These services tend to include a certified Hadoop bundle, consultancy, support and training.
 
@@ -18,7 +18,7 @@ We have also seen a number of hardware vendors and cloud providers provide offer
 
 Importantly for Hadoop, this will help drive its maturity and adoption.  In 2012, Gartner suggested that Hadoop was past the peak of inflated expectations and sliding toward the 'Trough of Disillusionment'.  While there are areas were adoption is ahead on the curve I would tend to agree with Gartner's assertion.
 
-<img class="aligncenter size-full wp-image-2440" src="http://www.monkeylittle.com/wp-content/uploads/2015/03/gartner-hype-cycle.png" alt="Gartner Hype Cycle" width="795" height="439" />
+<img src="/assets/img/post/2013-02-11-cloudera-essentials-for-apache-hadoop/gartner-hype-cycle.png" class="img-fluid img-thumbnail mx-3">
 
 The activities these companies engage in is increasing the awareness of Hadoop and the type of problems it can address.  To this end, Cloudera created an excellent set of webinars called 'Cloudera Essentials for Hadoop' which delivers a comprehensive introduction to Hadoop in the form of a 6 part series.
 
@@ -32,7 +32,7 @@ The problem that Google (and Yahoo) were trying to address was that of storing a
 
 As people discovered new use cases for Hadoop, an entire ecosystem grew up around it.  This included MapReduce implementation abstractions such as [Hive](http://hive.apache.org/) and [Pig](http://pig.apache.org/) which made it easier for people from SQL and scripting backgrounds to write MapReduce jobs.  [Sqoop](http://sqoop.apache.org/) and [Flume](http://flume.apache.org/) made it easier to migrate relational and streaming data to and from HDFS.
 
-*Part 2: Dissecting the Apache Hadoop Stack*
+**Part 2: Dissecting the Apache Hadoop Stack**
 
 [Dissecting the Apache Hadoop Stack](http://www.cloudera.com/content/cloudera/en/resources/library/training/dissecting-the-apache-hadoop-stack-2-of-6.html) describes the components that comprise Hadoop as being HDFS and MapReduce.  This is further dissected by describing the five daemon processes that form the Hadoop platform as being:
 
