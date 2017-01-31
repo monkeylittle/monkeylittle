@@ -34,6 +34,11 @@ paginate: 5
 disqus:
   shortname: monkeylittle
 
+# Sharing Settings
+sharing:
+  service: shareaholic
+  enabled: true
+
 # Build settings
 markdown: kramdown
 theme: minima
