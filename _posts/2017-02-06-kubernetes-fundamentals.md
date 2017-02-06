@@ -18,6 +18,8 @@ Over the last few years, I've been watching with interest the container space in
 
 Each of the previously mentioned orchestration tools incorporate a number of concepts, some of which are very similar and others which are quite distinctive.  This can make it quite challenging when you come to learn about one or other (and even more so when you come to compare them).  In this post I will briefly describe some of the key concepts you should understand when starting out with [Kubernetes](https://kubernetes.io).
 
+<!-- more -->
+
 ## Kubernetes Cluster
 
 <img src="/assets/img/post/2017-02-06-kubernetes-fundamentals/kubernetes-cluster.png" class="img-fluid mx-5 pull-right">
