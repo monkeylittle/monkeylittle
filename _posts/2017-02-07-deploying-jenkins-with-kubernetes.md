@@ -110,7 +110,7 @@ jenkins   1         1         1            1           3m
 We can also see that a single Pod has been created by invoking:
 
 {% highlight bash %}
-$kubectl get pods
+$ kubectl get pods
 NAME                       READY     STATUS    RESTARTS   AGE
 jenkins-2843131955-31rh1   1/1       Running   0          7m
 {% endhighlight %}
@@ -160,7 +160,7 @@ kubectl create -f jenkins-service.yaml
 To validate that creating the service was successful you can invoke:
 
 {% highlight bash %}
-$kubectl get services
+$ kubectl get services
 NAME         CLUSTER-IP   EXTERNAL-IP   PORT(S)          AGE
 jenkins      10.0.0.202   <nodes>       8080:30104/TCP   3m
 kubernetes   10.0.0.1     <none>        443/TCP          6h
