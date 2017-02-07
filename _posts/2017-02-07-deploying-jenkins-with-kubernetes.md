@@ -47,6 +47,8 @@ KubeDNS is running at https://192.168.99.100:8443/api/v1/proxy/namespaces/kube-s
 kubernetes-dashboard is running at https://192.168.99.100:8443/api/v1/proxy/namespaces/kube-system/services/kubernetes-dashboard
 {% endhighlight %}
 
+<!-- more -->
+
 ## Deploying Jenkins
 
 So now we have a single node Kubernetes environment running locally it's time to define our Jenkins deployment.  A simple deployment is defined below:
