@@ -27,6 +27,8 @@ We cannot talk about Kubernetes volumes without understanding the Docker filesys
 
 <img src="/assets/img/post/2017-02-08-adding-persistent-volumes-to-jenkins-with-kubernetes-volumes/container-filesystem.png" class="img-fluid mx-5">
 
+<!-- more -->
+
 The top of the stack is the container layer.  The container layer is ephemeral so the modifications to files within the container layer have the same lifecycle as the container.  That is, when the container is destroyed the modifications to the files in the container layer are lost.
 
 We can demonstrate this using Jenkins as described in '[Deploying Jenkins with Kubernetes]({% post_url 2017-02-07-deploying-jenkins-with-kubernetes %})'.  First create the Jenkins deployment and service:
