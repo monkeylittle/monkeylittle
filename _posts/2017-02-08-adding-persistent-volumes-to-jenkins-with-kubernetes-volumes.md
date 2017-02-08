@@ -31,7 +31,7 @@ We cannot talk about Kubernetes volumes without understanding the Docker filesys
 
 The top of the stack is the container layer.  The container layer is ephemeral so the modifications to files within the container layer have the same lifecycle as the container.  That is, when the container is destroyed the modifications to the files in the container layer are lost.
 
-We can demonstrate this using Jenkins as described in '[Deploying Jenkins with Kubernetes]({% post_url 2017-02-07-deploying-jenkins-with-kubernetes %})'.  First create the Jenkins deployment and service:
+We can demonstrate this using Jenkins as described in '[Deploying Jenkins with Kubernetes]({% post_url 2017-02-07-deploying-jenkins-with-kubernetes %})'.  First, create the Jenkins deployment and service:
 
 {% highlight bash %}
 kubectl create -f jenkins-deployment.yaml
@@ -78,7 +78,7 @@ This may also be found at: /var/jenkins_home/secrets/initialAdminPassword
 *************************************************************
 {% endhighlight %}
 
-Now armed with the administrator password you can proceed through the setup screens.  What is happening in the background is that the modifications to the data in JENKINS_HOME is being written to the container layer of the filesystem.  Next we want to ssh onto the Kubernetes Node and kill the jenkins docker container.
+Now armed with the administrator password you can proceed through the setup screens.  What is happening in the background is that the modifications to the data in JENKINS_HOME is being written to the container layer of the filesystem.  Next, we want to ssh onto the Kubernetes Node and kill the Jenkins docker container.
 
 {% highlight bash %}
 $ minikube ssh
@@ -90,11 +90,11 @@ $ docker kill 17f7d403f26b
 17f7d403f26b
 {% endhighlight %}
 
-If you were to run *docker ps* again you will notice that the Kubernetes replication controller has recreated the container and the the new container has a different CONTAINER ID.  If you return to Jenkins you will be presented with the *Unlock Jenkins* screen.  What has happened is that when the container was destroyed so to was the associated container layer.  When the container was recreated a new (empty) container layer was created.  As a result the previous modifications to the configuration was lost forever.
+If you were to run *docker ps* again you will notice that the Kubernetes replication controller has recreated the container and the new container has a different CONTAINER ID.  If you return to Jenkins you will be presented with the *Unlock Jenkins* screen.  What has happened is that when the container was destroyed so to was the associated container layer.  When the container was recreated a new (empty) container layer was created.  As a result, the previous modifications to the configuration was lost forever.
 
 ## Kubernetes Volumes
 
-Kubernetes Volumes can help preserve data across container restarts (and indeed Pod restarts depending on the type of volume used).  The lifecycle of a Kubernetes Volume is bound to the same lifecycle as a Pod.  A Volume (and its data) is preserved across container restarts irrespective of the nature of the restart (routine restart or due to failure).  When the Pod is destroyed so to are the associated Volumes.  Because the volume is associated with the Pod it is accessible to all containers within the Pod.  
+Kubernetes Volumes can help preserve data across container restarts (and indeed Pod restarts depending on the type of volume used).  The lifecycle of a Kubernetes Volume is bound to the same lifecycle as a Pod.  A Volume (and its data) is preserved across container restarts irrespective of the nature of the restart (routine restart or due to failure).  When the Pod is destroyed so too are the associated Volumes.  Because the volume is associated with the Pod it is accessible to all containers within the Pod.  
 
 A volume is mounted on top of the container filesystem and so data is still read in the same way as before except that modifications will occur to the volume.  Because the volume is durable across container restarts the data is preserved.
 
@@ -136,6 +136,6 @@ spec:
 
 The spec now defines a volume named *jenkins-home*.  This volume is mounted within the container at the path */var/jenkins_home* and so modifications to data within */var/jenkins_home* are written to the volume.  If we were to recreate the deployment, configure Jenkins and kill the Jenkins container as before you will not be presented with the *Unlock Jenkins* screen a second time.
 
-Of course, it the Pod is destroyed so to is the volume.  If you need the data to be preserved across Pod failures (node failures etc.) you will need to use remote storage such as AWS EBS or GCE Persistent Disk.
+Of course, it the Pod is destroyed so too is the volume.  If you need the data to be preserved across Pod failures (node failures etc.) you will need to use remote storage such as AWS EBS or GCE Persistent Disk.
 
 I've definitely learned a bit about the Docker and Kubernetes filesystem today and evolved the previous Jenkins example so that it is a little bit more robust.  I didn't like the manual setup steps needed to configure Jenkins so next I'll walk through creating my own Jenkins image.
