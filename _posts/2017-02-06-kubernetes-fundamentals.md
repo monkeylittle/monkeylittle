@@ -24,9 +24,9 @@ Each of the previously mentioned orchestration tools incorporate a number of con
 
 <img src="/assets/img/post/2017-02-06-kubernetes-fundamentals/kubernetes-cluster.png" class="img-fluid mx-5 pull-right">
 
-Kubernetes is a distributed system which consists of a number of connected virtual or physical machines.  At a minimum a Kubernetes cluster consists of two machines; one Master and one Node.  As of v1.5.1, Kubernetes state support for clusters of up to 1000 nodes with the following stipulations:
+Kubernetes is a distributed system which consists of a number of connected virtual or physical machines.  At a minimum a Kubernetes cluster consists of two machines; one Master and one Node.  As of v1.5.1, Kubernetes state support for clusters of up to 2000 nodes with the following stipulations:
 
-- No more than 1000 nodes
+- No more than 2000 nodes
 - No more than 60,000 total pods
 - No more than 120,000 total containers
 - No more than 100 pods per node
