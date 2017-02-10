@@ -5,6 +5,10 @@ layout: default
 <div class="row">
   <div class="col-12 col-sm-8">
 
+    {% if site.banner.enabled %}
+      {% include banner.html %}
+    {% endif %}
+
     {{ content }}
 
     {% for post in paginator.posts %}

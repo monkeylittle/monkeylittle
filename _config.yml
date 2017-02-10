@@ -22,6 +22,14 @@ url: "http://www.monkeylittle.com" # the base hostname & protocol for your site,
 twitter_username: monkeylittle_
 github_username:  monkeylittle
 
+# Banner Settings
+banner:
+  enabled: true
+  slides:
+    - post_id: /blog/2017/02/06/kubernetes-fundamentals
+    - post_id: /blog/2017/02/07/deploying-jenkins-with-kubernetes
+    - post_id: /blog/2017/02/08/adding-persistent-volumes-to-jenkins-with-kubernetes-volumes
+
 # Post Settings
 excerpt_separator: <!-- more -->
 permalink: /blog/:year/:month/:day/:title.html

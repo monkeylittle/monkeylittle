@@ -3,7 +3,7 @@ layout: post
 
 title: Auto-Scaling Jenkins with Kubernetes
 author: john_turner
-featured: false
+banner_image: http://placehold.it/730x300
 
 tags:
 - Kubernetes

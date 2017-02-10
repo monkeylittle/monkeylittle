@@ -1,0 +1,37 @@
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    {% for slide in site.banner.slides %}
+    {% assign index = forloop.index %}
+
+    <li data-target="#carouselExampleIndicators" data-slide-to="{{ index }}"{% if site.banner.slides.first == slide %} class="active"{% endif %}></li>
+    {% endfor %}
+  </ol>
+  <div class="carousel-inner" role="listbox">
+    {% for slide in site.banner.slides %}
+      {% for post in site.posts %}
+        {% if post.id == slide.post_id %}
+
+    <div class="carousel-item{% if site.banner.slides.first == slide %} active{% endif %}">
+      <img class="d-block img-fluid rounded" src="{{ post.banner_image }}" alt="{{ post.title }}">
+      <div class="carousel-caption d-none d-md-block">
+
+        <a href="{{ post.url }}" class="btn btn-lg btn-block btn-outline-primary" role="button" aria-disabled="true">{{ post.title }}</a>
+      </div>
+    </div>
+
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<hr>

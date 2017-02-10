@@ -3,7 +3,7 @@ layout: post
 
 title: Kubernetes Fundamentals
 author: john_turner
-featured: false
+banner_image: /assets/img/post/2017-02-06-kubernetes-fundamentals/banner.png
 
 tags:
 - Kubernetes
