@@ -177,6 +177,11 @@ $ minikube ip
 
 Now we can access the jenkins instance at *http://192.168.99.100:30104/*
 
-<img src="/assets/img/post/2017-02-07-deploying-jenkins-with-kubernetes/jenkins-getting-started.png" class="img-fluid img-thumbnail mx-5">
+<figure class="figure">
+  <a href="/assets/img/post/2017-02-07-deploying-jenkins-with-kubernetes/jenkins-getting-started.png" data-lightbox="jenkins-unlock-screen" data-title="Jenkins Unlock Screen">
+    <img class="img-fluid img-thumbnail mx-auto" src="/assets/img/post/2017-02-07-deploying-jenkins-with-kubernetes/jenkins-getting-started.png" alt="Jenkins Unlock Screen">
+  </a>
+  <figcaption class="figure-caption text-center">Jenkins Unlock Screen</figcaption>
+</figure>
 
 So that is a bit of a world wind tour of deploying Jenkins on Kubernetes.  I plan on developing this use case in future posts so as to explore Kubernetes further so stay tuned if you are finding this useful.  On the other hand, if you are experienced with Kubernetes and spot any rookie mistakes I'd appreciate you drawing my attention to them using the comment section below.

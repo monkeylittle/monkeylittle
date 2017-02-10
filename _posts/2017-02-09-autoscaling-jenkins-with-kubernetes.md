@@ -82,9 +82,12 @@ For Jenkins to dynamically provision Jenkins slaves as Kubernetes Pods, the [Kub
 
 With the Kubernetes plugin installed it must be configured by navigating to *Manage Jenkins > Configure System* and scrolling to the *Cloud* section.  First we configure the *Kubernetes Section* as below:
 
-<a href="/assets/img/post/2017-02-09-autoscaling-jenkins-with-kubernetes/kubernetes-plugin-configuration.png" data-lightbox="kubernetes-plugin-configuration" data-title="Kubernetes Plugin Configuration">
-  <img class="img-fluid mx-5" src="/assets/img/post/2017-02-09-autoscaling-jenkins-with-kubernetes/kubernetes-plugin-configuration.png" alt="Kubernetes Plugin Configuration">
-</a>
+<figure class="figure">
+  <a href="/assets/img/post/2017-02-09-autoscaling-jenkins-with-kubernetes/kubernetes-plugin-configuration.png" data-lightbox="kubernetes-plugin-configuration" data-title="Kubernetes Plugin Configuration">
+    <img class="img-fluid img-thumbnail mx-auto" src="/assets/img/post/2017-02-09-autoscaling-jenkins-with-kubernetes/kubernetes-plugin-configuration.png" alt="Kubernetes Plugin Configuration">
+  </a>
+  <figcaption class="figure-caption text-center">Kubernetes Plugin Configuration</figcaption>
+</figure>
 
 To obtain the Kubernetes URL you should invoke:
 
@@ -109,9 +112,12 @@ IP:		172.17.0.4
 
 With these configuration entries the Jenkins Kubernetes plugin can interact with the Kubernetes API server.  Next we need to configure the pod template and container for the slave so that the plugin can provision a pod.
 
-<a href="/assets/img/post/2017-02-09-autoscaling-jenkins-with-kubernetes/kubernetes-plugin-pod-template-configuration.png" data-lightbox="kubernetes-plugin-configuration" data-title="Kubernetes Plugin Pod Template Configuration">
-  <img class="img-fluid mx-5" src="/assets/img/post/2017-02-09-autoscaling-jenkins-with-kubernetes/kubernetes-plugin-pod-template-configuration.png" alt="Kubernetes Plugin Pod Template Configuration">
-</a>
+<figure class="figure">
+  <a href="/assets/img/post/2017-02-09-autoscaling-jenkins-with-kubernetes/kubernetes-plugin-pod-template-configuration.png" data-lightbox="kubernetes-plugin-pod-template-configuration" data-title="Kubernetes Plugin Pod Template Configuration">
+    <img class="img-fluid img-thumbnail mx-auto" src="/assets/img/post/2017-02-09-autoscaling-jenkins-with-kubernetes/kubernetes-plugin-pod-template-configuration.png" alt="Kubernetes Plugin Pod Template Configuration">
+  </a>
+  <figcaption class="figure-caption text-center">Kubernetes Plugin Pod Template Configuration</figcaption>
+</figure>
 
 A few things to note here:
 
@@ -121,15 +127,21 @@ A few things to note here:
 
 If you've followed along so far you should be ready to create a job to test our autoscaling behavior.  Go ahead and create a new *Freestyle project*.  You will need to set the *Label Expression* field to match that specified in the *Pod Template* configuration.  I've also created an *Execute shell* build step.
 
-<a href="/assets/img/post/2017-02-09-autoscaling-jenkins-with-kubernetes/job-general-configuration.png" data-lightbox="kubernetes-plugin-configuration" data-title="Job General Configuration">
-  <img class="img-fluid mx-5" src="/assets/img/post/2017-02-09-autoscaling-jenkins-with-kubernetes/job-general-configuration.png" alt="Job General Configuration">
-</a>
+<figure class="figure">
+  <a href="/assets/img/post/2017-02-09-autoscaling-jenkins-with-kubernetes/job-general-configuration.png" data-lightbox="job-general-configuration" data-title="Job General Configuration">
+    <img class="img-fluid img-thumbnail mx-auto" src="/assets/img/post/2017-02-09-autoscaling-jenkins-with-kubernetes/job-general-configuration.png" alt="Job General Configuration">
+  </a>
+  <figcaption class="figure-caption text-center">Job General Configuration</figcaption>
+</figure>
 
 <hr>
 
-<a href="/assets/img/post/2017-02-09-autoscaling-jenkins-with-kubernetes/job-build-step-configuration.png" data-lightbox="kubernetes-plugin-configuration" data-title="Job Built Step Configuration">
-  <img class="img-fluid mx-5" src="/assets/img/post/2017-02-09-autoscaling-jenkins-with-kubernetes/job-build-step-configuration.png" alt="Job Build Step Configuration">
-</a>
+<figure class="figure">
+  <a href="/assets/img/post/2017-02-09-autoscaling-jenkins-with-kubernetes/job-build-step-configuration.png" data-lightbox="job-build-step-configuration" data-title="Job Build Step Configuration">
+    <img class="img-fluid img-thumbnail mx-auto" src="/assets/img/post/2017-02-09-autoscaling-jenkins-with-kubernetes/job-build-step-configuration.png" alt="Job Build Step Configuration">
+  </a>
+  <figcaption class="figure-caption text-center">Job Build Step Configuration</figcaption>
+</figure>
 
 You are now ready to build the job.  Before doing that you should *watch* the Kubernetes Pods.  Do this by installing watch (brew install watch) and executing the watch as follows:
 

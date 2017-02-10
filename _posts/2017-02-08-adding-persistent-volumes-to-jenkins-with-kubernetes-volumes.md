@@ -25,9 +25,13 @@ By default disk files in a container are ephemeral.  This means that when the Je
 
 We cannot talk about Kubernetes volumes without understanding the Docker filesystem.  The Docker filesystem is composed of a number of layers starting with one or more read only image layers.  When a container is created, a read/write container layer is added to the top of the stack.  When a file is read from the filesystem each layer is inspected from the top of the stack to the bottom until the file is found or the bottom of the stack is reached.  When a file is modified it is first copied to the top of the stack and so the next time it is read the modified file is found first.
 
-<a href="/assets/img/post/2017-02-08-adding-persistent-volumes-to-jenkins-with-kubernetes-volumes/container-filesystem.png" data-lightbox="container-filesystem" data-title="Container Filesystem">
-  <img class="img-fluid mx-5" src="/assets/img/post/2017-02-08-adding-persistent-volumes-to-jenkins-with-kubernetes-volumes/container-filesystem.png" alt="Container Filesystem">
-</a>
+
+<figure class="figure">
+  <a href="/assets/img/post/2017-02-08-adding-persistent-volumes-to-jenkins-with-kubernetes-volumes/container-filesystem.png" data-lightbox="container-filesystem" data-title="Container Filesystem">
+    <img class="img-fluid img-thumbnail mx-auto" src="/assets/img/post/2017-02-08-adding-persistent-volumes-to-jenkins-with-kubernetes-volumes/container-filesystem.png" alt="Container Filesystem">
+  </a>
+  <figcaption class="figure-caption text-center">Container Filesystem</figcaption>
+</figure>
 
 <!-- more -->
 
@@ -49,9 +53,12 @@ $ echo "$(minikube ip):$(kubectl describe service jenkins | grep NodePort: | gre
 
 You should be presented with the *Unlock Jenkins* screen below.
 
-<a href="/assets/img/post/2017-02-08-adding-persistent-volumes-to-jenkins-with-kubernetes-volumes/unlock-jenkins.png" data-lightbox="unlock-jenkins" data-title="Unlock Jenkins">
-  <img class="img-fluid mx-5" src="/assets/img/post/2017-02-08-adding-persistent-volumes-to-jenkins-with-kubernetes-volumes/unlock-jenkins.png" alt="Unlock Jenkins">
-</a>
+<figure class="figure">
+  <a href="/assets/img/post/2017-02-08-adding-persistent-volumes-to-jenkins-with-kubernetes-volumes/unlock-jenkins.png" data-lightbox="unlock-jenkins" data-title="Unlock Jenkins Screen">
+    <img class="img-fluid img-thumbnail mx-auto" src="/assets/img/post/2017-02-08-adding-persistent-volumes-to-jenkins-with-kubernetes-volumes/unlock-jenkins.png" alt="Unlock Jenkins">
+  </a>
+  <figcaption class="figure-caption text-center">Unlock Jenkins Screen</figcaption>
+</figure>
 
 Lets proceed to configure Jenkins.  To retrieve the administrator password we need to look at the Jenkins log.  First query the name of the Jenkins pod.
 
@@ -102,9 +109,12 @@ Kubernetes Volumes can help preserve data across container restarts (and indeed 
 
 A volume is mounted on top of the container filesystem and so data is still read in the same way as before except that modifications will occur to the volume.  Because the volume is durable across container restarts the data is preserved.
 
-<a href="/assets/img/post/2017-02-08-adding-persistent-volumes-to-jenkins-with-kubernetes-volumes/kubernetes-volumes.png" data-lightbox="kubernetes-volumes" data-title="Kubernetes Volumes">
-  <img class="img-fluid mx-5" src="/assets/img/post/2017-02-08-adding-persistent-volumes-to-jenkins-with-kubernetes-volumes/kubernetes-volumes.png" alt="Kubernetes Volumes">
-</a>
+<figure class="figure">
+  <a href="/assets/img/post/2017-02-08-adding-persistent-volumes-to-jenkins-with-kubernetes-volumes/kubernetes-volumes.png" data-lightbox="kubernetes-volumes" data-title="Kubernetes Volumes">
+    <img class="img-fluid img-thumbnail mx-auto" src="/assets/img/post/2017-02-08-adding-persistent-volumes-to-jenkins-with-kubernetes-volumes/kubernetes-volumes.png" alt="Kubernetes Volumes">
+  </a>
+  <figcaption class="figure-caption text-center">Kubernetes Volumes</figcaption>
+</figure>
 
 Lets add a volume to our Jenkins deployment.
 
