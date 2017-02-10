@@ -1,5 +1,5 @@
 
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+<div id="carouselExampleIndicators" class="carousel slide hidden-lg-down" data-ride="carousel">
   <ol class="carousel-indicators">
     {% for slide in site.banner.slides %}
     {% assign index = forloop.index %}
@@ -16,7 +16,7 @@
       <img class="d-block img-fluid rounded" src="{{ post.banner_image }}" alt="{{ post.title }}">
       <div class="carousel-caption d-none d-md-block">
 
-        <a href="{{ post.url }}" class="btn btn-lg btn-block btn-outline-primary" role="button" aria-disabled="true">{{ post.title }}</a>
+        <a href="{{ post.url }}" class="btn btn-block btn-outline-primary" style="white-space: normal;" role="button">{{ post.title }}</a>
       </div>
     </div>
 
@@ -34,4 +34,4 @@
   </a>
 </div>
 
-<hr>
+<hr class="hidden-lg-down">
