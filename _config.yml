@@ -47,9 +47,8 @@ sharing:
   service: shareaholic
   enabled: true
 
-# Tag Index Settings
-tag_index:
-  permalink: /blog/tag/:tag
+# Tag Settings
+tag:
   layout: tag_index.html
 
 # Build settings
