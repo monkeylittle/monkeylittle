@@ -5,11 +5,11 @@ layout: default
 <div class="row">
   <div class="col-12 col-sm-8">
 
-    {% if site.banner.enabled %}
-      {% include banner.html %}
-    {% endif %}
-
-    {{ content }}
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="/">Home</a></li>
+      <li class="breadcrumb-item">Tag</li>
+      <li class="breadcrumb-item active">{{ page.tag }}</li>
+    </ol>
 
     {% for post in paginator.posts %}
 
@@ -41,7 +41,22 @@ layout: default
 
     {% endfor %}
 
-    {% include pagination.html %}
+    <!-- Pager -->
+    <div class="pagination justify-content-between">
+
+      <div class="page-link{% if paginator.next_page_path == undefined %} invisible{% endif %}">
+          <a href="/tags/{{ page.tag }}/page{{ paginator.page | plus:1 }}">&larr; Older</a>
+      </div>
+
+      <div class="page-link{% if paginator.previous_page_path == undefined %} invisible{% endif %}">
+        {% if paginator.page == 2 %}
+        <a href="/tags/{{ page.tag }}">Newer &rarr;</a>
+        {% else %}
+        <a href="/tags/{{ page.tag }}/page{{ paginator.page | minus:1 }}">Newer &rarr;</a>
+        {% endif %}
+      </div>
+
+    </div>
 
   </div>
 
