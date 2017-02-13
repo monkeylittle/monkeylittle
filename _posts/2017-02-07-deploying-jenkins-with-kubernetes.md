@@ -4,6 +4,7 @@ layout: post
 title: Deploying Jenkins with Kubernetes
 author: john_turner
 banner_image: /assets/img/post/2017-02-07-deploying-jenkins-with-kubernetes/banner.png
+shareaholic_image: /assets/img/post/2017-02-07-deploying-jenkins-with-kubernetes/shareaholic-image.png
 
 tags:
 - Kubernetes

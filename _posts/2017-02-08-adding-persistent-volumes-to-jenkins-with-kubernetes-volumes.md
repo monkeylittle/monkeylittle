@@ -4,6 +4,7 @@ layout: post
 title: Adding Persistent Volumes to Jenkins with Kubernetes
 author: john_turner
 banner_image: /assets/img/post/2017-02-08-adding-persistent-volumes-to-jenkins-with-kubernetes-volumes/banner.png
+shareaholic_image: /assets/img/post/2017-02-08-adding-persistent-volumes-to-jenkins-with-kubernetes-volumes/shareaholic-image.png
 
 tags:
 - Kubernetes
