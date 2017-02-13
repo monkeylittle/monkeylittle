@@ -3,9 +3,9 @@
 {% if page.layout == 'post' %}
 
 {% if page.shareaholic_image %}
-<meta name='shareaholic:image' content='{{ page.shareaholic_image }}'/>
+<meta name='shareaholic:image' content='{{site.url}}{{ page.shareaholic_image }}'/>
 {% else %}
-<meta name='shareaholic:image' content='/assets/img/logo-512x512.png/assets/img/logo-512x512.png'/>
+<meta name='shareaholic:image' content='{{site.url}}/assets/img/logo-512x512.png/assets/img/logo-512x512.png'/>
 {% endif %}
 
 {% assign author = site.data.people[page.author] %}
