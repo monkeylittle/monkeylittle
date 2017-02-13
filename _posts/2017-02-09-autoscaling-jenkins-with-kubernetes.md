@@ -154,6 +154,15 @@ default-jenkins-slave-11f26675ac49   2/2       Running   0          4s
 jenkins-2559287856-5p145             1/1       Running   0          1h
 {% endhighlight %}
 
+<div style="border-left: 0.25rem solid #eceeef;">
+<div class="pl-3">
+<strong>As pointed out by Daniel Vigueras below, a better way to watch the Kubernetes Pods may be to use the command: </strong>
+{% highlight bash %}
+kubectl get pods -w
+{% endhighlight %}
+</div>
+</div>
+
 Then as your build job executes you can watch the pod being created and destroyed.
 
 Over the past few days I've:
