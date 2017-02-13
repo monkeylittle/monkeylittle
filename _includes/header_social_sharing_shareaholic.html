@@ -1,0 +1,14 @@
+<script type='text/javascript' data-cfasync='false' src='//dsms0mj1bbhn4.cloudfront.net/assets/pub/shareaholic.js' data-shr-siteid='3da49811e6c33b63aa18ca96877ccd9c' async='async'></script>
+
+{% if page.layout == 'post' %}
+
+{% if page.shareaholic_image %}
+<meta name='shareaholic:image' content='{{ page.shareaholic_image }}'/>
+{% else %}
+<meta name='shareaholic:image' content='/assets/img/logo-512x512.png/assets/img/logo-512x512.png'/>
+{% endif %}
+
+{% assign author = site.data.people[page.author] %}
+<meta name='shareaholic:article_author_name' content='{{ author.name }}'/>
+
+{% endif %}

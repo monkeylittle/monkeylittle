@@ -4,6 +4,7 @@ layout: post
 title: Kubernetes Fundamentals
 author: john_turner
 banner_image: /assets/img/post/2017-02-06-kubernetes-fundamentals/banner.png
+shareaholic_image: /assets/img/post/2017-02-06-kubernetes-fundamentals/shareaholic-image.png
 
 tags:
 - Kubernetes
