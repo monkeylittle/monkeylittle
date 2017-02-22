@@ -11,13 +11,13 @@ tags:
 - Jenkins
 ---
 
-At the end of my last post I had created a docker image for Jenkins that extended the official docker image by disabling the setup wizard, installing the default plugins and installing maven.  I skipped over:
+At the end of my last post I created a docker image for Jenkins that extended the official docker image by disabling the setup wizard, installing the default plugins and installing maven.  I skipped over:
 
 - setting up ssh for GitHub.
 - automating the configuration of the Jenkins job(s).
 - creating appropriate Jenkins slave images.
 
-In this post I'll set up SSH for GitHub.
+In this post I'll describe how to set up SSH for GitHub.
 
 ## Setting Up SSH for GitHub
 
@@ -129,7 +129,7 @@ spec:
   </div>
 </div>
 
-I have defined 3 volumes as part of the deployment.  The first populates the the volume with the contents of the jenkins-ssh-config ConfigMap, the second with the contents of the jenkins-ssh-key Secret and the third is the Jenkins home directory.
+I have defined 3 volumes as part of the deployment.  The first populates the volume with the contents of the jenkins-ssh-config ConfigMap, the second with the contents of the jenkins-ssh-key Secret and the third is the Jenkins home directory.
 
 I have also defined an Init Container that:
 
