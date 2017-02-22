@@ -50,6 +50,8 @@ kubectl create secret generic jenkins-ssh-key --from-file=id_jenkins_rsa=.ssh/id
 
 Now that we have made the SSH config and keys available to Kubernetes we need to configure the Jenkins container.  I've done this using the Kubernetes Init Container feature which is in beta as of version 1.5.
 
+<!-- more -->
+
 <div class="card mb-3">
   <div class="card-header">
     deployment.yaml
