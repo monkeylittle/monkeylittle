@@ -23,7 +23,12 @@ Each of the previously mentioned orchestration tools incorporate a number of con
 
 ## Kubernetes Cluster
 
-<img src="/assets/img/post/2017-02-06-kubernetes-fundamentals/kubernetes-cluster.png" class="img-fluid mx-5 pull-right">
+<figure class="figure mx-auto w-25 pull-right">
+  <a href="/assets/img/post/2017-02-06-kubernetes-fundamentals/kubernetes-cluster.png" data-lightbox="kubernetes-cluster" data-title="Kubernetes Cluster">
+    <img class="img-fluid" src="/assets/img/post/2017-02-06-kubernetes-fundamentals/kubernetes-cluster.png" alt="Kubernetes Cluster">
+  </a>
+  <figcaption class="figure-caption text-center">Kubernetes Cluster</figcaption>
+</figure>
 
 Kubernetes is a distributed system which consists of a number of connected virtual or physical machines.  At a minimum a Kubernetes cluster consists of two machines; one Master and one Node.  As of v1.5.1, Kubernetes state support for clusters of up to 2000 nodes with the following stipulations:
 
@@ -47,7 +52,12 @@ The Kubernetes Master contains a number of components for which there may only b
 
 ### Kubernetes Node
 
-<img src="/assets/img/post/2017-02-06-kubernetes-fundamentals/kubernetes-node.png" class="img-fluid mx-5 pull-right">
+<figure class="figure mx-auto w-25 pull-right">
+  <a href="/assets/img/post/2017-02-06-kubernetes-fundamentals/kubernetes-node.png" data-lightbox="kubernetes-node" data-title="Kubernetes Node">
+    <img class="img-fluid" src="/assets/img/post/2017-02-06-kubernetes-fundamentals/kubernetes-node.png" alt="Kubernetes Node">
+  </a>
+  <figcaption class="figure-caption text-center">Kubernetes Node</figcaption>
+</figure>
 
 The Kubernetes Node is the workhorse of the cluster.  A Node is managed by the Master and can be either a virtual or physical machine.  Within each node exists an operating system, a container runtime ([Docker](https://www.docker.com/products/docker) is supported with experimental support for [rkt](https://coreos.com/rkt/)), a proxy server (kube-proxy) and a node agent (kubelet).
 
@@ -59,7 +69,12 @@ The Node runs a process supervisor service that restarts the container runtime o
 
 ## Deployment
 
-<img src="/assets/img/post/2017-02-06-kubernetes-fundamentals/kubernetes-deployment.png" class="img-fluid mx-5 pull-right">
+<figure class="figure mx-auto w-25 pull-right">
+  <a href="/assets/img/post/2017-02-06-kubernetes-fundamentals/kubernetes-deployment.png" data-lightbox="kubernetes-pod" data-title="Kubernetes Deployment">
+    <img class="img-fluid" src="/assets/img/post/2017-02-06-kubernetes-fundamentals/kubernetes-deployment.png" alt="Kubernetes Deployment">
+  </a>
+  <figcaption class="figure-caption text-center">Kubernetes Deployment</figcaption>
+</figure>
 
 A Deployment is a logical component that describes the desired state of Pods and Replica Sets.  Use of a Deployment allows Kubernetes to perform richer orchestration as opposed to fine grained transactional actions.  Examples of this include:
 
@@ -71,7 +86,12 @@ Given that a deployment specifies the desired state, all the detail relating to 
 
 ## Pod
 
-<img src="/assets/img/post/2017-02-06-kubernetes-fundamentals/kubernetes-pod.png" class="img-fluid mx-3 pull-right">
+<figure class="figure mx-auto w-25 pull-right">
+  <a href="/assets/img/post/2017-02-06-kubernetes-fundamentals/kubernetes-pod.png" data-lightbox="kubernetes-pod" data-title="Kubernetes Pod">
+    <img class="img-fluid" src="/assets/img/post/2017-02-06-kubernetes-fundamentals/kubernetes-pod.png" alt="Kubernetes Pod">
+  </a>
+  <figcaption class="figure-caption text-center">Kubernetes Pod</figcaption>
+</figure>
 
 A Pod exists within a single Node and can consist of a number of application containers with associated volumes.  Each Pod is allocated a dedicated IP address upon creation.  Containers and Volumes cannot be created individually and must be created within a Pod.
 

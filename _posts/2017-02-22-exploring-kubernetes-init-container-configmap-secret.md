@@ -39,7 +39,7 @@ Host github.com
 </div>
 
 {% highlight bash %}
-kubectl create configmap jenkins-ssh-config --from-file=.ssh/config
+kubectl create configmap jenkins-ssh-config --from-file=.ssh/config --from-file=.ssh/known_hosts
 {% endhighlight %}
 
 The SSH config specifies the identity to use as *~/.ssh/id_jenkins_rsa*.  As the private key is something I want to secure, I will generate the key and store it as a Kubernetes secret.  First, follow the instructions on GitHub to [generate a new ssh key](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) and [add it to your Github account](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account).  Then you can store the private and public key as a Kubernetes secret.
@@ -79,9 +79,7 @@ spec:
               mkdir -p /var/jenkins_home/.ssh\n
               cp /var/jenkins_home/ssh_config/* /var/jenkins_home/.ssh/\n
               cp /var/jenkins_home/ssh_key/* /var/jenkins_home/.ssh/\n
-              chmod 400 /var/jenkins_home/.ssh/id_jenkins*\n
-              ssh-keyscan github.com >> /var/jenkins_home/.ssh/known_hosts\n
-              ssh-keyscan ssh.github.com >> /var/jenkins_home/.ssh/known_hosts
+              chmod 400 /var/jenkins_home/.ssh/id_jenkins*
             "],
             "volumeMounts": [
               {
